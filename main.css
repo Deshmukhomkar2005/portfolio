@@ -1,0 +1,300 @@
+
+marquee{
+    height:20px;
+    flex-flow: right;    
+    background-color: black;
+    color:white;
+}
+
+#navbar{
+    margin:2px;
+    display: flex;
+    height: 60px;
+    background-color: #ece6e6;
+    color: BLACK;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#shivcrupa{
+    height:10px;
+    width:10px
+}
+
+#home{
+    position:relative;
+    padding-left: 3px;
+    padding-top: 7px;
+    height:25px;
+}
+
+a{
+    padding:5px;
+    text-decoration: none;
+    color:black;
+}
+
+a select{
+    height:30px;
+    text-decoration: none;
+    border:none;
+}
+
+.box{
+    height:250px;
+    width:170px;
+    margin:3px;
+    float:left;
+}
+
+.box b{
+    color: rgb(106, 182, 146);
+}
+
+.box2{
+    height:380px;
+    width:175px;
+    margin:3px;
+    float:left;
+}
+
+.box2 b{
+    color: rgb(106, 182, 146);
+}
+
+.circle{
+    height:160px;
+    width:160px;
+    border-radius: 50%;
+    background-color:white;
+    margin:3px;
+    float:left;
+}
+
+.circle img{
+    height:160px;
+    width:160px;
+    border-radius: 50%;
+    background-color:white;
+    margin:3px;
+    float:left;
+}
+
+.box3{
+    position:relative;
+    height:370px;
+    width:350px;
+    margin:3px;
+    float:left;
+}
+
+.box3 b{
+    color: rgb(106, 182, 146);
+}
+
+
+.hrtag{
+    height:5px;
+    width:380px;
+    text-decoration: none;
+    padding-top: 30px;
+}
+
+.foot-panel4 {
+   
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+
+}
+
+footer {
+    margin-top: 15px;
+}
+
+.foot-panel1 {
+    background-color: #374758;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd
+}
+
+.foot-panel3 {
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logofoot {
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+
+}
+
+.foot-panel4 {
+    /* text-align:center; */
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+
+}
+
+.pages {
+    padding-top: 25px;
+}
+
+.copyrights {
+    padding-top: 3px;
+}
+
+input[type="button"]{
+    color: black;
+    background-color:rgb(255, 221, 127);
+   /* height:30px;
+    margin:5px;
+    padding-bottom: 2px;*/
+    height:30px; width:170px; margin:2px; ;
+}
+
+input[type="button"]:hover{
+    background-color: rgb(58, 205, 205);
+    border: 3px solid black;
+}
+
+#search:hover {
+    border: 2px solid orange;
+}
+
+a:hover{
+    border:2px solid black;
+    background-color: #ece6e6;
+}
+
+#sareesectionfirstrow{
+    height:300px;
+}
+
+
+.slider {
+    width: 100%;
+    height: 510px;
+    position: relative;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .slider img:first-child {
+    z-index: 1;
+  }
+  
+  .slider img:nth-child(2) {
+    z-index: 0;
+  }
+
+  .navigation-button {
+    text-align: center;
+    position: relative;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  
+ 
+
+  .slider {
+      position: relative;
+      width: 100%;
+      height: 300px; /* Adjust height as needed */
+      overflow: hidden;
+  }
+
+  .slider img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+  }
+
+  .dot {
+      
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 5px;
+      background-color: #ee620b;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+  }
+
+  .dot.active {
+      background-color: #0cd7e5;
+  }
+ .download-button {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #4CAF50; /* Green background */
+        color: white; /* White text */
+        text-align: center;
+        text-decoration: none; /* No underline */
+        border-radius: 5px; /* Rounded corners */
+        margin-top: 10px; /* Space above the button */
+    }
+
+    .download-button:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }

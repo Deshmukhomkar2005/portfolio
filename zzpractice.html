@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Entry Pass</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #ec6600;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buttons button:hover {
+            background-color: #45a049;
+        }
+
+        .temple-selection {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .temple-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .temple-buttons button {
+            margin: 5px 0;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            background-color: #ddd;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        .temple-buttons button.selected {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .form-group {
+            margin: 15px 0;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .submit-section {
+            display: none;
+        }
+
+        .output-section {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .output-section h2 {
+            color: #4CAF50;
+        }
+
+        .output-section p {
+            margin: 10px 0;
+        }
+
+        .output-section img {
+            max-width: 200px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+        }
+
+
+        * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        TEMPLE ENTRY PASS
+    </div>
+
+    <div class="container">
+
+                <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Ayodhaya.jpeg" style="width:100%">
+      <div class="text">Ayodhaya</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="tuljapur.jpeg" style="width:760px;height:422px;">
+      <div class="text">Tuljapur</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="tirupati.jpeg" style=width:760px;height:422px;">
+      <div class="text">Tirupatir</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  
+
+
+
+        <div class="buttons">
+            <button onclick="showHelp()">Help</button>
+            <button onclick="showContact()">Contact</button>
+            <button onclick="showRegister()">Register</button>
+        </div>
+
+        <div id="help-section" style="display:none;">
+            <h2>Help Section</h2>
+            <p>For any assistance, please contact us at support@templepass.com.</p>
+        </div>
+
+        <div id="contact-section" style="display:none;">
+            <h2>Contact Us</h2>
+            <p>Email: contact@templepass.com</p>
+            <p>Phone: +91 9881083949</p>
+        </div>
+
+        <div id="register-section" class="temple-selection">
+            <h2>Select a Temple</h2>
+            <div class="temple-buttons">
+                <button onclick="selectTemple('Kedarnath')">Kedarnath</button>
+                <button onclick="selectTemple('Ayodhya')">Ayodhya</button>
+                <button onclick="selectTemple('Tirupati')">Tirupati</button>
+                <button onclick="selectTemple('Tuljapur')">Tuljapur</button>
+                <button onclick="selectTemple('Pandharpur')">Pandharpur</button>
+                <button onclick="selectTemple('Siddhi Vinayak')">Siddhi Vinayak</button>
+            </div>
+
+            <div id="temple-details" class="form-group">
+                <h3 id="selected-temple">Selected Temple: None</h3>
+                <label for="passes">Number of Passes:</label>
+                <input type="number" id="passes" placeholder="Enter number of passes" min="1">
+            </div>
+
+            <button onclick="proceedToSubmit()" style="width: 100%; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">Submit</button>
+        </div>
+
+        <div id="submit-section" class="submit-section">
+            <h2>Purchase Details</h2>
+            <p>Temple: <span id="confirm-temple"></span></p>
+            <p>Number of Passes: <span id="confirm-passes"></span></p>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" placeholder="Enter your address"></textarea>
+            </div>
+
+            <button onclick="submitForm()" style="width: 100%; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">Confirm Purchase</button>
+        </div>
+
+        <div id="output-section" class="output-section">
+            <h2>Thank You!</h2>
+            <p>Your purchase is confirmed.</p>
+            <p><strong>Name:</strong> <span id="output-name"></span></p>
+            <p><strong>Email:</strong> <span id="output-email"></span></p>
+            <p><strong>Phone:</strong> <span id="output-phone"></span></p>
+            <p><strong>Address:</strong> <span id="output-address"></span></p>
+            <p><strong>Temple:</strong> <span id="output-temple"></span></p>
+            <p><strong>Number of Passes:</strong> <span id="output-passes"></span></p>
+            <img id="temple-image" alt="Temple Image">
+        </div>
+
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Temple Entry Pass. All Rights Reserved.
+    </div>
+
+    <script>
+        
+ let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+        let selectedTemple = '';
+
+        function showHelp() {
+            hideAllSections();
+            document.getElementById('help-section').style.display = 'block';
+        }
+
+        function showContact() {
+            hideAllSections();
+            document.getElementById('contact-section').style.display = 'block';
+        }
+
+        function showRegister() {
+            hideAllSections();
+            document.getElementById('register-section').style.display = 'block';
+        }
+
+        function hideAllSections() {
+            document.getElementById('help-section').style.display = 'none';
+            document.getElementById('contact-section').style.display = 'none';
+            document.getElementById('register-section').style.display = 'none';
+            document.getElementById('submit-section').style.display = 'none';
+            document.getElementById('output-section').style.display = 'none';
+        }
+
+        function selectTemple(temple) {
+            selectedTemple = temple;
+            document.getElementById('selected-temple').innerText = 'Selected Temple: ' + temple;
+            document.querySelectorAll('.temple-buttons button').forEach(btn => btn.classList.remove('selected'));
+            document.querySelector(`.temple-buttons button[onclick="selectTemple('${temple}')"]`).classList.add('selected');
+        }
+
+        function proceedToSubmit() {
+            const passes = document.getElementById('passes').value;
+            if (selectedTemple && passes) {
+                document.getElementById('confirm-temple').innerText = selectedTemple;
+                document.getElementById('confirm-passes').innerText = passes;
+                document.getElementById('submit-section').style.display = 'block';
+            } else {
+                alert('Please select a temple and enter the number of passes.');
+            }
+        }
+
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+
+            if (name && email && phone && address) {
+                document.getElementById('output-name').innerText = name;
+                document.getElementById('output-email').innerText = email;
+                document.getElementById('output-phone').innerText = phone;
+                document.getElementById('output-address').innerText = address;
+                document.getElementById('output-temple').innerText = selectedTemple;
+                document.getElementById('output-passes').innerText = document.getElementById('passes').value;
+
+                // Set temple image
+                let templeImage = '';
+                switch (selectedTemple) {
+                    case 'Kedarnath':
+                        templeImage = 'Kedarnath.jpeg';
+                        break;
+                    case 'Ayodhya':
+                        templeImage = 'Ayodhaya.jpeg';
+                        break;
+                    case 'Tirupati':
+                        templeImage = 'tirupati.jpeg';
+                        break;
+                    case 'Tuljapur':
+                        templeImage = 'tuljapur.jpeg';
+                        break;
+                    case 'Pandharpur':
+                        templeImage = 'pandherpur.jpeg';
+                        break;
+                    case 'Siddhi Vinayak':
+                        templeImage = 'siddhi_vinayak.jpg';
+                        break;
+                    default:
+                        templeImage = '';
+                }
+                document.getElementById('temple-image').src = templeImage;
+
+                hideAllSections();
+                document.getElementById('output-section').style.display = 'block';
+            } else {
+                alert('Please fill all the details.');
+            }
+        }
+    </script>
+
+</body>
+</html>
